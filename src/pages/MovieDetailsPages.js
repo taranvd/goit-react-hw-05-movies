@@ -29,7 +29,7 @@ const MovieDetailsPages = () => {
 
       <MovieDetails movie={movie} />
 
-      <Suspense fallback={<div>Loading..adda.</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
     </div>

@@ -12,7 +12,6 @@ const Reviews = () => {
       try {
         const { results } = await fetchReviews(id);
         setReviews(results);
-        console.log(results);
       } catch (error) {
         console.log(error);
       }
