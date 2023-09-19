@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-const SearchBar = ({ onSubmit }) => {
-  const [query, setQuery] = useState('');
+const SearchBar = ({ onSubmit, initialQuery }) => {
+  const [query, setQuery] = useState(initialQuery ?? '');
 
   function handlerSubmit(e) {
     e.preventDefault();

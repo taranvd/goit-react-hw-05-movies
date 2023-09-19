@@ -48,7 +48,10 @@ const Movies = () => {
 
   return (
     <div>
-      <SearchBar onSubmit={handleSubmit} />
+      <SearchBar
+        onSubmit={handleSubmit}
+        initialQuery={searchParams.get('query') ?? ''}
+      />
 
       <ul>
         {movies.map(movie => (

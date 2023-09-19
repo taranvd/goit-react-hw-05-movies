@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import GlobalStyle from './GlobalStyle';
 import AppLayout from './AppLayout/AppLayout';
+import NotFound from 'pages/NotFound';
 
 // import Cast from './Cast/Cast';
 // import Reviews from './Reviews/Reviews';
@@ -27,6 +28,7 @@ export const App = () => {
             <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
       <GlobalStyle />
